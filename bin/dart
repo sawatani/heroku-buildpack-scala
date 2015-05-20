@@ -1,4 +1,5 @@
 dart_dir="$1/dart"
+echo "Downloading $DART_SDK"
 [ -d "$dart_dir" ] && (cd "$dart_dir" &&
 curl -o dart_sdk.zip "$DART_SDK" &&
 unzip dart_sdk.zip &&
