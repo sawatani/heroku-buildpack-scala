@@ -5,6 +5,6 @@ echo "-----> Installing Dart SDK via URL $DART_SDK"
 [ -d "$dart_dir" ] && (cd "$dart_dir" &&
 curl -o dart_sdk.zip "$DART_SDK" &&
 unzip dart_sdk.zip &&
-dart-sdk/bin/pub build --release
+dart-sdk/bin/pub build --mode release
 )
 
