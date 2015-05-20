@@ -5,5 +5,6 @@ curl https://storage.googleapis.com/download.dartlang.org/linux/debian/dart_stab
 apt-get update
 apt-get install dart
 
-(cd "$1/dart" && /usr/lib/dart/bin/pub build)
+dir_dir="$1/dart"
+[ -d "$dart_dir" ] && (cd "$dart_dir" && /usr/lib/dart/bin/pub build)
 
