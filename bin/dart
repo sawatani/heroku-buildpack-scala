@@ -3,6 +3,8 @@ DART_SDK="https://storage.googleapis.com/dart-archive/channels/stable/release/45
 echo "-----> Installing Sass + Compass"
 gem update --system
 gem install compass
+type sass
+type compass
 
 dart_dir="$1/dart"
 echo "-----> Installing Dart SDK via URL $DART_SDK"
