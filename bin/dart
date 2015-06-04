@@ -3,8 +3,8 @@ DART_SDK="https://storage.googleapis.com/dart-archive/channels/stable/release/45
 dart_dir="$1/dart"
 
 echo "-----> Installing Sass + Compass"
-gem update --system
-gem install --bindir $dart_dir/bin compass
+gem update --system --no-rdoc --no-ri
+gem install --no-rdoc --no-ri --bindir "$dart_dir/bin" compass
 
 export PATH="$PATH:$dart_dir/bin"
 type sass
