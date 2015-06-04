@@ -1,6 +1,6 @@
 DART_SDK="https://storage.googleapis.com/dart-archive/channels/stable/release/45396/sdk/dartsdk-linux-x64-release.zip"
 
-echo "-----> Installing Dart SDK via URL $DART_SDK"
+echo "-----> Installing Sass + Compass"
 gem update --system
 gem install compass
 
