@@ -1,12 +1,15 @@
 DART_SDK="https://storage.googleapis.com/dart-archive/channels/stable/release/45396/sdk/dartsdk-linux-x64-release.zip"
 
+dart_dir="$1/dart"
+
 echo "-----> Installing Sass + Compass"
 gem update --system
-gem install compass
+gem install --bindir $dart_dir/bin compass
+
+export PATH="$PATH:$dart_dir/bin"
 type sass
 type compass
 
-dart_dir="$1/dart"
 echo "-----> Installing Dart SDK via URL $DART_SDK"
 [ -d "$dart_dir" ] && (cd "$dart_dir" &&
 curl -o dart_sdk.zip "$DART_SDK" &&
